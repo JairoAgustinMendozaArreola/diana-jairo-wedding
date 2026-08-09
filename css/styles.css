@@ -830,15 +830,6 @@ body.loaded .hero__footer {
   text-transform: uppercase;
 }
 
-.closing__actions {
-  margin-bottom: 60px;
-}
-
-.editorial-button--light {
-  border-color: var(--ivory);
-  color: var(--ivory);
-}
-
 .closing__signature {
   padding-top: 24px;
 
@@ -967,14 +958,6 @@ body.loaded .hero__footer {
 
 .editorial-button:hover {
   color: var(--ivory);
-}
-
-.editorial-button--light::before {
-  background: var(--ivory);
-}
-
-.editorial-button--light:hover {
-  color: var(--ink);
 }
 
 @media (prefers-reduced-motion: reduce) {
