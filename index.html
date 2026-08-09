@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Diana & Jairo | Nuestra Boda</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <audio id="backgroundMusic" loop preload="metadata">
+    <source src="assets/audio/wedding-song.mp3" type="audio/mpeg" />
+  </audio>
+
+  <button
+    class="music-control"
+    id="musicControl"
+    type="button"
+    aria-label="Reproducir música"
+    aria-pressed="false"
+  >
+    <span class="music-control__icon" aria-hidden="true">♪</span>
+    <span class="music-control__text">Música</span>
+  </button>
+
+  <main>
+    <section class="hero">
+      <div class="hero__top">
+        <span>05</span>
+        <span>09</span>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow">The Wedding Of</p>
+
+        <h1 class="hero__title">
+          <span>Diana</span>
+          <span class="hero__ampersand">&</span>
+          <span>Jairo</span>
+        </h1>
+
+        <p class="hero__date">
+          Sábado · 05 Septiembre · 2026
+        </p>
+
+        <p class="hero__time">
+          6:00 PM
+        </p>
+      </div>
+
+      <div class="hero__footer">
+        <span>Jardín Marey</span>
+
+        <a href="#intro" class="hero__scroll">
+          Descubrir
+          <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="intro" id="intro">
+      <p class="section-label">01 / Introduction</p>
+
+      <div class="intro__content">
+        <p class="intro__small">Nos casamos</p>
+
+        <h2>
+          Una historia que continúa,
+          ahora para siempre.
+        </h2>
+      </div>
+    </section>
+
+    <section class="story">
+      <div class="story__header">
+        <p class="section-label reveal">02 / Our Story</p>
+
+        <h2 class="reveal">
+          Nuestra
+          <span>historia</span>
+        </h2>
+      </div>
+
+      <div class="story__grid">
+        <div class="story__image story__image--large reveal--left">
+          <img
+            src="assets/images/story-01.jpeg"
+            alt="Diana y Jairo"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="story__text reveal--right">
+          <p class="story__lead">
+            Hay encuentros que cambian para siempre
+            la dirección de una historia.
+          </p>
+
+          <p>
+            Entre coincidencias, decisiones y momentos compartidos,
+            fuimos construyendo un camino que hoy nos trae hasta aquí.
+          </p>
+
+          <p>
+            El 05 de septiembre de 2026 comenzamos un nuevo capítulo:
+            uno que queremos celebrar con las personas que forman parte
+            de nuestra historia.
+          </p>
+        </div>
+
+        <div class="story__image story__image--small">
+          <img
+            src="assets/images/story-02.jpeg"
+            alt="Diana y Jairo ring"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+    
+    <section class="date-section">
+      <div class="date-section__header reveal">
+        <p class="section-label">03 / The Date</p>
+
+        <p class="date-section__year">2026</p>
+      </div>
+
+      <div class="date-section__content reveal">
+        <div class="date-section__date">
+          <span class="date-section__day">05</span>
+
+          <div>
+            <p>Septiembre</p>
+            <p>Sábado · 6:00 PM</p>
+          </div>
+        </div>
+
+        <div class="countdown" aria-label="Cuenta regresiva para la boda">
+          <div class="countdown__item">
+            <span id="days">00</span>
+            <p>Días</p>
+          </div>
+
+          <div class="countdown__item">
+            <span id="hours">00</span>
+            <p>Horas</p>
+          </div>
+
+          <div class="countdown__item">
+            <span id="minutes">00</span>
+            <p>Minutos</p>
+          </div>
+
+          <div class="countdown__item">
+            <span id="seconds">00</span>
+            <p>Segundos</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="date-section__phrase reveal">
+        Guardamos este día para compartirlo contigo.
+      </p>
+    </section>
+
+    <section class="place">
+      <div class="place__header reveal">
+        <p class="section-label">04 / The Place</p>
+        <p class="place__number">04</p>
+      </div>
+
+      <div class="place__content reveal">
+        <p class="place__eyebrow">Nos vemos en</p>
+
+        <h2>
+          Jardín
+          <span>Marey</span>
+        </h2>
+
+        <div class="place__details">
+          <p>
+            Lic. Adolfo López Mateos 152<br />
+            Las Joyas<br />
+            51355 San Luis Mextepec, Méx.
+          </p>
+
+          <a
+            class="editorial-button"
+            href="https://www.google.com/maps/search/?api=1&query=Jard%C3%ADn%20Marey%20Lic.%20Adolfo%20L%C3%B3pez%20Mateos%20152%20Las%20Joyas%2051355%20San%20Luis%20Mextepec%20M%C3%A9xico"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Cómo llegar</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <p class="place__footer reveal">
+        San Luis Mextepec · Estado de México
+      </p>
+    </section>
+    
+    <section class="gallery">
+      <div class="gallery__header reveal">
+        <p class="section-label">05 / Gallery</p>
+
+        <h2>
+          Algunos
+          <span>momentos</span>
+        </h2>
+      </div>
+
+      <div class="gallery__grid reveal">
+        <div class="gallery__item gallery__item--portrait">
+          <img
+            src="assets/images/gallery-01.jpeg"
+            alt="Diana y Jairo journey"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item gallery__item--landscape">
+          <img
+            src="assets/images/gallery-02.jpeg"
+            alt="Diana y Jairo futbol"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item gallery__item--small">
+          <img
+            src="assets/images/gallery-03.jpeg"
+            alt="Diana y Jairo Aculco"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="gallery__item gallery__item--tall">
+          <img
+            src="assets/images/gallery-04.jpeg"
+            alt="Diana y Jairo hat"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <p class="gallery__caption reveal">
+        Fragmentos de una historia que seguimos escribiendo juntos.
+      </p>
+    </section>
+
+    <section class="together">
+      <div class="together__header reveal">
+        <p class="section-label">06 / Together</p>
+      </div>
+
+      <div class="together__content reveal">
+        <p class="together__eyebrow">Una vida juntos</p>
+
+        <blockquote class="together__quote">
+          “Y ahora permanecen la fe, la esperanza y el amor,
+          estos tres; pero el mayor de ellos es el amor.”
+        </blockquote>
+
+        <p class="together__reference">
+          1 Corintios 13:13
+        </p>
+      </div>
+    </section>
+
+    <footer class="closing reveal">
+      <div class="closing__top">
+        <p class="section-label">D & J / 2026</p>
+
+        <p>05 · 09 · 2026</p>
+      </div>
+
+      <div class="closing__names">
+        <p>Diana</p>
+        <span>&</span>
+        <p>Jairo</p>
+      </div>
+
+      <div class="closing__info">
+        <p>
+          Sábado · 6:00 PM
+        </p>
+
+        <p>
+          Jardín Marey<br />
+          San Luis Mextepec, Estado de México
+        </p>
+      </div>
+
+      <div class="closing__actions">
+        <a
+          class="editorial-button editorial-button--light"
+          href="https://wa.me/?text=Te%20comparto%20la%20invitaci%C3%B3n%20de%20la%20boda%20de%20Diana%20y%20Jairo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>Compartir por WhatsApp</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <p class="closing__signature">
+        Nos vemos pronto.
+      </p>
+    </footer>
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
