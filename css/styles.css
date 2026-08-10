@@ -1313,3 +1313,73 @@ body.loaded .hero__footer {
 
   color: var(--stone);
 }
+
+/* ========================================
+   DEVELOPER CREDIT
+======================================== */
+
+.developer-credit {
+  margin-top: 50px;
+  padding-top: 24px;
+
+  border-top: 1px solid rgba(244, 240, 232, 0.12);
+
+  color: rgba(244, 240, 232, 0.55);
+}
+
+.developer-credit__main {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  font-size: 0.55rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.developer-credit__main span {
+  color: var(--ivory);
+}
+
+.developer-credit__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+
+  margin-top: 18px;
+
+  font-size: 0.5rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.developer-credit__tech span:not(:last-child)::after {
+  content: "·";
+  margin-left: 18px;
+}
+
+.developer-credit__note {
+  margin-top: 22px;
+
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  font-style: italic;
+  letter-spacing: 0.03em;
+}
+
+
+/* DEVELOPER CREDIT DESKTOP */
+
+@media (min-width: 900px) {
+  .developer-credit {
+    margin-top: 70px;
+  }
+
+  .developer-credit__main {
+    font-size: 0.58rem;
+  }
+
+  .developer-credit__note {
+    text-align: right;
+  }
+}
