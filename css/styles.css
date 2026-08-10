@@ -947,7 +947,7 @@ body.loaded .hero__footer {
 }
 
 .closing__names {
-  margin: auto 0;
+  margin: 70px 0 55px;
 
   display: flex;
   flex-direction: column;
@@ -955,7 +955,7 @@ body.loaded .hero__footer {
 
   font-family: var(--font-serif);
   font-size: clamp(4.8rem, 22vw, 10rem);
-  line-height: 0.7;
+  line-height: 0.82;
   text-transform: uppercase;
 }
 
@@ -1005,9 +1005,13 @@ body.loaded .hero__footer {
   }
 
   .closing__names {
+    margin: auto 0;
+
     flex-direction: row;
     justify-content: center;
     gap: 50px;
+
+    line-height: 0.7;
   }
 
   .closing__names span {
