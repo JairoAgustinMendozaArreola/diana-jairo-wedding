@@ -336,6 +336,12 @@ body.loaded .hero__footer {
     width: 75%;
     margin-left: auto;
   }
+
+  .closing__dress-code {
+    margin-left: auto;
+    text-align: right;
+  }
+
 }
 
 /* DATE */
@@ -729,6 +735,149 @@ body.loaded .hero__footer {
     margin-top: 120px;
   }
 }
+
+/* ========================================
+   GIFTS
+======================================== */
+
+.gifts {
+  padding: 100px 24px 120px;
+
+  background: var(--ivory);
+  color: var(--ink);
+}
+
+.gifts__header {
+  margin-bottom: 100px;
+}
+
+.gifts__content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.gifts__eyebrow {
+  margin-bottom: 30px;
+
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.gifts__title {
+  max-width: 900px;
+
+  font-family: var(--font-serif);
+  font-size: clamp(3.5rem, 13vw, 8rem);
+  font-weight: 400;
+  line-height: 0.85;
+  text-transform: uppercase;
+}
+
+.gifts__title span {
+  display: block;
+
+  margin-top: 12px;
+  margin-left: 10%;
+
+  font-style: italic;
+  text-transform: none;
+}
+
+.gifts__text {
+  max-width: 520px;
+
+  margin-top: 80px;
+  margin-left: auto;
+
+  font-size: 0.78rem;
+  font-weight: 300;
+  line-height: 1.9;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.gifts__text p + p {
+  margin-top: 24px;
+}
+
+/* Decorative envelope */
+
+.gifts__envelope {
+  width: min(100%, 420px);
+  aspect-ratio: 16 / 10;
+
+  margin-top: 90px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--ink);
+
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-style: italic;
+
+  position: relative;
+}
+
+.gifts__envelope::before,
+.gifts__envelope::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+
+  width: 50%;
+  height: 1px;
+
+  background: var(--ink);
+}
+
+.gifts__envelope::before {
+  left: 0;
+  transform-origin: left;
+  transform: rotate(31deg);
+}
+
+.gifts__envelope::after {
+  right: 0;
+  transform-origin: right;
+  transform: rotate(-31deg);
+}
+
+.gifts__envelope span:last-child {
+  margin-top: 8px;
+
+  font-family: var(--font-sans);
+  font-size: 0.55rem;
+  font-style: normal;
+  letter-spacing: 0.3em;
+}
+
+
+/* GIFTS DESKTOP */
+
+@media (min-width: 900px) {
+  .gifts {
+    padding: 140px 6vw 160px;
+  }
+
+  .gifts__header {
+    margin-bottom: 140px;
+  }
+
+  .gifts__text {
+    margin-top: 100px;
+  }
+
+  .gifts__envelope {
+    margin-top: -80px;
+  }
+}
+
 
 /* TOGETHER */
 
@@ -1126,4 +1275,41 @@ body.loaded .hero__footer {
 
 .gallery__item--tall img {
   object-position: center;
+}
+
+/* DRESS CODE */
+
+.closing__dress-code {
+  margin-bottom: 60px;
+  max-width: 520px;
+}
+
+.closing__dress-label {
+  margin-bottom: 14px;
+
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.closing__dress-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 8vw, 4.5rem);
+  font-style: italic;
+  line-height: 1;
+}
+
+.closing__dress-note {
+  margin-top: 20px;
+  max-width: 420px;
+
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 300;
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--stone);
 }
