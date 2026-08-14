@@ -1387,3 +1387,35 @@ body.loaded .hero__footer {
     text-align: right;
   }
 }
+
+/* ========================================
+   BONUS IMAGE
+======================================== */
+
+.bonus-image {
+  padding: 100px 24px 120px;
+  background: var(--ivory);
+  color: var(--ink);
+}
+
+.bonus-image__frame {
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.bonus-image__frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 900px) {
+  .bonus-image {
+    padding: 140px 6vw 160px;
+  }
+
+  .bonus-image__frame {
+    max-width: 1200px;
+    margin: 70px auto 0;
+  }
+}
